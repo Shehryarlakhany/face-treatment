@@ -1,0 +1,912 @@
+@font-face {
+  font-family: proxima-nova;
+  src: local("proxima-nova"), url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: local("proxima-nova"), url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: local("proxima-nova"), url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"), url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"), url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: proxima-nova;
+  src: local("proxima-nova"), url(https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"), url(https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"), url(https://use.typekit.net/af/6e816b/00000000000000003b9b3064/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal
+}
+
+body {
+  margin: 0;
+  color: #000;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.px-2 {
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+h1 {
+  color: #fff;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0;
+  text-transform: uppercase
+}
+
+h2 {
+  color: #000;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin: 2.5rem 0 1.25rem;
+  border-bottom: 3px solid #00a1ed;
+  max-width: 800px;
+  padding-bottom: 10px
+}
+
+h4 {
+  color: #000;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 1.875rem 0 .9375rem
+}
+
+p {
+  color: #000;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin-bottom: 1.25rem
+}
+
+span {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-family: inherit
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #00a1ed;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all .4s;
+  font-family: inherit
+}
+
+a:hover,
+a:visited {
+  color: #004fa1
+}
+
+.btn,
+.button.primary,
+.eii-btn,
+.eii-btn.primary,
+a.btn,
+a.eii-btn {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  background-image: linear-gradient(#c929d3 0, #780388 50%, #780388 51%, #4e0555 100%);
+  background-size: 100% 200%;
+  background-color: #c929d3;
+  background-position: center top;
+  color: #fff
+}
+
+.btn:hover,
+.button.primary:hover,
+.eii-btn.primary:hover,
+.eii-btn:hover,
+a.btn:hover,
+a.eii-btn:hover {
+  cursor: pointer
+}
+
+.btn span,
+.button.primary span,
+.eii-btn span,
+.eii-btn.primary span,
+a.btn span,
+a.eii-btn span {
+  color: #fff
+}
+
+.btn:active,
+.btn:focus,
+.btn:hover,
+.button.primary:active,
+.button.primary:focus,
+.button.primary:hover,
+.eii-btn.primary:active,
+.eii-btn.primary:focus,
+.eii-btn.primary:hover,
+.eii-btn:active,
+.eii-btn:focus,
+.eii-btn:hover,
+a.btn:active,
+a.btn:focus,
+a.btn:hover,
+a.eii-btn:active,
+a.eii-btn:focus,
+a.eii-btn:hover {
+  background-position: center bottom;
+  color: #fff
+}
+
+.btn.secondary,
+.button.secondary,
+.eii-btn.secondary,
+button.secondary {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  background-image: linear-gradient(#00a1ed 0, #004fa1 33%, #004fa1 33%, #0683be 66%, #0683be 67%, #003265 100%);
+  background-size: 100% 300%;
+  background-color: #00a1ed;
+  background-position: center top;
+  color: #fff
+}
+
+.btn.secondary:hover,
+.button.secondary:hover,
+.eii-btn.secondary:hover,
+button.secondary:hover {
+  cursor: pointer
+}
+
+.btn.secondary:active,
+.btn.secondary:focus,
+.btn.secondary:hover,
+.button.secondary:active,
+.button.secondary:focus,
+.button.secondary:hover,
+.eii-btn.secondary:active,
+.eii-btn.secondary:focus,
+.eii-btn.secondary:hover,
+button.secondary:active,
+button.secondary:focus,
+button.secondary:hover {
+  color: #fff;
+  background-position: center bottom
+}
+
+.btn.tertiary,
+.button.tertiary,
+.eii-btn.tertiary,
+button.tertiary {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  background: 0 0;
+  border: 1px solid #00a1ed;
+  color: #00a1ed
+}
+
+.btn.tertiary:hover,
+.button.tertiary:hover,
+.eii-btn.tertiary:hover,
+button.tertiary:hover {
+  cursor: pointer
+}
+
+.btn.tertiary:active,
+.btn.tertiary:focus,
+.btn.tertiary:hover,
+.button.tertiary:active,
+.button.tertiary:focus,
+.button.tertiary:hover,
+.eii-btn.tertiary:active,
+.eii-btn.tertiary:focus,
+.eii-btn.tertiary:hover,
+button.tertiary:active,
+button.tertiary:focus,
+button.tertiary:hover {
+  background: 0 0;
+  color: #004fa1;
+  border-color: #004fa1
+}
+
+.btn.tertiary-2,
+.button.tertiary-2,
+.eii-btn.tertiary-2,
+button.tertiary-2 {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  background: 0 0;
+  border: 1px solid #fff;
+  color: #fff
+}
+
+.btn.tertiary-2:hover,
+.button.tertiary-2:hover,
+.eii-btn.tertiary-2:hover,
+button.tertiary-2:hover {
+  cursor: pointer
+}
+
+.btn.tertiary-2:active,
+.btn.tertiary-2:focus,
+.btn.tertiary-2:hover,
+.button.tertiary-2:active,
+.button.tertiary-2:focus,
+.button.tertiary-2:hover,
+.eii-btn.tertiary-2:active,
+.eii-btn.tertiary-2:focus,
+.eii-btn.tertiary-2:hover,
+button.tertiary-2:active,
+button.tertiary-2:focus,
+button.tertiary-2:hover {
+  background: 0 0;
+  color: #004fa1;
+  border-color: #004fa1
+}
+
+.btn.quaternary,
+.button.quaternary,
+.eii-btn.quaternary,
+button.quaternary {
+  background-image: linear-gradient(#d8d8d8 0, #555 50%, #555 51%, #222 100%);
+  background-size: 100% 200%;
+  background-position: center top;
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  color: #000;
+  background-color: #d8d8d8
+}
+
+.btn.quaternary:hover,
+.button.quaternary:hover,
+.eii-btn.quaternary:hover,
+button.quaternary:hover {
+  cursor: pointer
+}
+
+.btn.quaternary:active,
+.btn.quaternary:focus,
+.btn.quaternary:hover,
+.button.quaternary:active,
+.button.quaternary:focus,
+.button.quaternary:hover,
+.eii-btn.quaternary:active,
+.eii-btn.quaternary:focus,
+.eii-btn.quaternary:hover,
+button.quaternary:active,
+button.quaternary:focus,
+button.quaternary:hover {
+  background-position: center bottom;
+  color: #fff
+}
+
+.button.wide,
+.eii-btn.wide,
+button.wide {
+  width: 100% !important;
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@media (min-width:768px) {
+  .banner-container {
+    max-width: 1200px;
+    margin: 0 auto
+  }
+
+  h1 {
+    font-size: 3.125rem;
+    line-height: 3.125rem
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin: 3.75rem 0 1.875rem
+  }
+
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    margin: 2rem 0 1.125rem
+  }
+
+  main ul li {
+    font-size: 1.125rem;
+    line-height: 1.667em;
+    margin: 0 0 20px
+  }
+}
+
+#photo-gallery__title-wrapper {
+  flex: 1 1 auto;
+  margin: 1.875rem 0 .9375rem;
+  margin: 0
+}
+
+#photo-gallery__title {
+  margin: 0;
+  color: #fff
+}
+
+#photo-gallery h2 {
+  margin: 0 0 1em
+}
+
+#photo-gallery p {
+  margin: 0 0 1em
+}
+
+h1.photo-gallery__title {
+  position: relative;
+  z-index: 3
+}
+
+@media (min-width:768px) {
+  #photo-gallery__title-wrapper {
+    margin: 0 0 .9375rem;
+    margin: 0
+  }
+}
+
+@media screen and (max-width:532px) {
+  main.page-photo-gallery .banner.photo-gallery h1 {
+    font-size: 18px !important
+  }
+}
+
+.banner {
+  background-color: #000;
+  position: relative;
+  overflow: hidden
+}
+
+.banner .banner-image {
+  background-image: var(--auto-banner);
+  background-color: #000;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0
+}
+
+.banner .content {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden
+}
+
+@media (min-width:768px) {
+  .banner .content {
+    padding-top: 40px;
+    padding-bottom: 40px
+  }
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery {
+  position: relative;
+  height: 475px
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery h1 {
+  visibility: hidden
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .banner-image {
+  background-image: url(girl-face-mobile.webp);
+  height: 100%;
+  background-size: auto 750px;
+  background-position: 50% 71.25%
+}
+
+html.no-webp main.page-photo-gallery[data-section=landing] #banner-photo-gallery .banner-image {
+  background-image: url(girl-face-mobile.webp)
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area {
+  display: flex !important;
+  position: absolute;
+  top: -8px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area h4 {
+  margin: .5375rem 0 .9375rem 20px;
+  color: #fff;
+  position: relative;
+  font-size: 1.2rem
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area h4::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 6px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area h4.refresh::before {
+  background: #00a1ed
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area h4.define::before {
+  background: #780388
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .cta-concern {
+  display: block !important;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  width: 100%
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .cta-concern a.eii-btn.base {
+  background-image: none;
+  background-color: rgba(0, 0, 0, .4);
+  border: 1px solid #fff;
+  pointer-events: none
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .cta-concern a.eii-btn:not(.base) {
+  border: 1px solid rgba(255, 255, 255, .7)
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-49%);
+  transition: 1.5s opacity
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.active {
+  z-index: 10
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.active g {
+  pointer-events: visibleFill
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation {
+  bottom: 110px;
+  width: 400px;
+  height: 300px;
+  top: 200px
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation .main-svg {
+  width: 400px;
+  height: 250px;
+  max-width: 180px
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable ellipse,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable path {
+  stroke: #fff;
+  stroke-width: 1px;
+  opacity: 1;
+  transition: .4s all
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-rejuvenation ellipse,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-rejuvenation path {
+  stroke: #fff;
+  fill: rgba(0, 161, 237, .07);
+  transition: .4s all
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-rejuvenation.active ellipse,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-rejuvenation.active path {
+  stroke: #fff;
+  fill: rgba(0, 161, 237, .5)
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-contouring path {
+  stroke: #fff;
+  fill: rgba(201, 41, 211, .03);
+  transition: .4s all
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones .zone-clickable.full-face-contouring.active path {
+  stroke: #fff;
+  fill: rgba(201, 41, 211, .5)
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures {
+  display: none
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  padding-left: 0;
+  margin-top: -35px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures.active {
+  opacity: 1;
+  z-index: 2;
+  display: block
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures h2 {
+  text-transform: uppercase;
+  display: none;
+  font-weight: 900;
+  margin-bottom: 0
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures p {
+  text-transform: uppercase;
+  display: none
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures.left ul.toc li a::before {
+  content: "";
+  background-color: #00a1ed
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures.right ul.toc li a::before {
+  content: "";
+  background-color: #c929d3
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc {
+  width: 100%
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li {
+  text-align: center
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li .nobreak {
+  white-space: nowrap
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a {
+  font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 10px;
+  letter-spacing: .01em;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.26em;
+  position: relative;
+  padding: 1.125rem 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0s;
+  background: 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .4;
+  text-transform: none;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 1rem 2.5rem;
+  transition: .4s all
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover {
+  cursor: pointer
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:active,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:focus,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover {
+  background: 0 0;
+  color: #004fa1;
+  border-color: #004fa1
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a.active,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover {
+  opacity: 1;
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(0, 0, 0, .8)
+}
+
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a.active:after,
+main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover:after {
+  opacity: 1;
+  color: #fff;
+  border-color: #fff;
+  background-color: rgba(0, 0, 0, .8)
+}
+
+@media (min-width:524px) {
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures {
+    margin-top: -5px
+  }
+}
+
+@media (min-width:768px) {
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content {
+    padding-top: 30px
+  }
+}
+
+@media (min-width:1024px) {
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery {
+    height: 650px
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .banner-image {
+    background-image: url(girl-face-desktop.webp);
+    background-size: auto 650px
+  }
+
+  html.no-webp main.page-photo-gallery[data-section=landing] #banner-photo-gallery .banner-image {
+    background-image: url(girl-face-desktop.webp)
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .content .gallery-refresh-define-selection-area {
+    display: none !important
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .cta-concern {
+    display: none !important
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones {
+    transform: translateX(50%);
+    left: unset
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones svg {
+    width: 100% !important;
+    height: auto !important
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation {
+    width: 400px;
+    height: 539px;
+    top: 34px;
+    right: calc(49.75%)
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation .main-svg {
+    max-width: 390px
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures {
+    width: 100%;
+    height: auto;
+    display: flex !important;
+    justify-content: space-between
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures {
+    max-width: none;
+    margin-top: 0;
+    width: 320px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures h2 {
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    display: block;
+    border-bottom: none;
+    max-width: none;
+    padding-bottom: 0;
+    color: #fff;
+    visibility: visible;
+    margin: 0 0 0
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures p {
+    display: block;
+    border-bottom: none;
+    max-width: none;
+    padding-bottom: 0;
+    color: #fff;
+    visibility: visible;
+    margin: 0 0 20px
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc {
+    display: block;
+    padding: 0
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li {
+    display: inline-block;
+    opacity: 1 !important;
+    width: 100%;
+    height: auto;
+    visibility: visible;
+    text-align: left
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a {
+    background-color: transparent;
+    font-size: 1.25rem;
+    padding: 0 0 0 20px;
+    border: none;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    line-height: 1.25em;
+    position: relative;
+    border-radius: 0;
+    text-align: left
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a.active,
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover {
+    opacity: 1;
+    color: #fff;
+    border-color: transparent;
+    background-color: transparent
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a.active:after,
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:hover:after {
+    opacity: 1;
+    color: #fff;
+    border-color: transparent;
+    background-color: transparent
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .nav-procedures .procedures ul.toc li a:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 50
+  }
+}
+
+
+@media (max-width:1023px) {
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation {
+    transform: translate(-22%, -43%)
+  }
+
+  main.page-photo-gallery[data-section=landing] #banner-photo-gallery .zones.rejuvenation .main-svg {
+    transform: scale(1.5795);
+    -webkit-transform: scale(1.5795);
+    -moz-transform: scale(1.5795);
+    -ms-transform: scale(1.5795);
+    -o-transform: scale(1.5795);
+  }
+}
